@@ -15,8 +15,9 @@
 \ProcessOptions
 \LoadClass{report}
 
+\usepackage[T1, EU1]{fontenc}
 \usepackage[russian, english]{babel}
-\usepackage[utf8]{inputenc}
+% \usepackage[utf8]{inputenc}
 
 \usepackage{fontspec}
 \defaultfontfeatures[Times New Roman]{
@@ -195,14 +196,14 @@ MASTER\/'S THESIS\\
 \par
 %\skip 5\baselineskip
 \vfill
-\signature{Student}{\@author \\ \@department \\ \@thesisdate}
+\signature{Student:}{\@author \\ \@department \\ \@thesisdate}
 \par
 \vfill
 \unvbox\@titlesupervisor
 \par
 \vfill
 \unvbox\@titlecovisor
-%\signature{Accepted by}{\@chairmanname \\ \@chairmantitle}
+\signature{Accepted by:}{\@chairmanname \\ \@chairmantitle}
 \vfill
 \small{Moscow \@degreeyear \\ \@copyrightnotice}
 \end{titlepage}}
